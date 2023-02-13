@@ -11,3 +11,5 @@ class4_YYYYMMDD_FOAM_orca025_14.1_SST.nc.gz.enc
 class4_YYYYMMDD_FOAM_orca025_14.1_profile.nc.gz.enc
 
 class4_YYYYMMDD_GIOPS_CONCEPTS_3.3_aice.nc.gz.enc 
+
+Procedures expects 2 months of Global RTOFS data in the archive
