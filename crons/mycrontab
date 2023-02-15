@@ -1,0 +1,8 @@
+SHELL=/bin/bash -l
+
+NEWHOME='/path/to/cron'
+
+# Copy GODAE, GEFS, GDAS, GFS_pkls to Hera
+0 10 * * * ${NEWHOME}/scripts/relay_hera.sh 1>$NEWHOME/logs/relay.log 2>&1
+
+# end of mycrontab
