@@ -22,10 +22,11 @@ function godae {
 	# 20230208: all GODAE files from 20221227 onwards changed from digest='' to digest='-md sha256'
 	# Mercator uses a newer openssl digest hash
 	#if [[ $FNAME =~ 'PSY4' ]]; then
+    if [[ "$FNAME" == *"FOAM"* ]]; then
 	  digest='-md sha256'
-	#else
-	#  digest=''
-	#fi
+	else
+	  digest=''
+	fi
     /usr/bin/openssl enc -d -aes-256-cbc $digest -pass pass:ire15aus6 -in ${FNAME}.gz.enc | zcat > ${FNAME}
     nccopy -7 -d 4 ${FNAME} ${FNAME}4
     mv ${FNAME}4 ${FNAME}
