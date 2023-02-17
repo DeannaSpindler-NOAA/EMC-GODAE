@@ -1,0 +1,7 @@
+On WCOSS2: mycrontab and relay_hera.sh
+This copies the Global RTOFS files to Hera.
+
+On Hera: mycrontab.hera and godae_task.sh
+This processes the files and uploads them to GODAE.
+
+

@@ -1,0 +1,8 @@
+#!/bin/bash -l
+#MAILTO=mailto:Deanna.Spindler@noaa.gov
+NEWHOME=/scratch2/NCEPDEV/ocean/Deanna.Spindler/save
+
+#  GEFS-Wave graphics generation
+ 00 22 * * * ${NEWHOME}/Cron/ww3_tasks.sh 1>${NEWHOME}/Logs/ww3_tasks.log 2>&1
+# GODAE task
+ 35 21 * * * ${NEWHOME}/Cron/godae_task.sh 1>${NEWHOME}/Logs/godae_task.log 2>&1
